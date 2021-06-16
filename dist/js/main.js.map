@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://sample/./src/js/main.js"],"names":["console","log"],"mappings":"AAAAA,QAAQC,IAAI","file":"js/main.js","sourcesContent":["console.log(\"this is main.js\");"],"sourceRoot":""}

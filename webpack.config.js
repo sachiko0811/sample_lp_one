@@ -5,10 +5,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
-    entry: './src/javascripts/main.js',
+    entry: './src/js/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'javascripts/main.js',
+        filename: 'js/main.js',
     },
     module: {
         rules: [
@@ -81,18 +81,18 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: './stylesheets/my.css',
         }),
-        new HtmlWebpackPlugin({
-            template: './src/templates/index.pug',
-            filename: 'index.html'
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/templates/access.pug',
-            filename: 'access.html'
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/templates/members/sachiko.pug',
-            filename: 'members/sachiko.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: 'index.html',
+        //     filename: 'index.html'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/templates/access.pug',
+        //     filename: 'access.html'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/templates/members/sachiko.pug',
+        //     filename: 'members/sachiko.html'
+        // }),
         new CleanWebpackPlugin(),
     ],
 }
